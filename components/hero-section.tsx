@@ -1,23 +1,55 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { Play, Pause, Volume2, VolumeX } from "lucide-react"
 import Image from "next/image"
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [isMuted, setIsMuted] = useState(false)
+  const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
     setMounted(true)
+    // Initialize audio
+    audioRef.current = new Audio('/Bohemian Rhapsody _ Muppet Music Video _ The Muppets [tgbNymZ7vqY].mp3')
+    audioRef.current.loop = true
+    
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause()
+        audioRef.current = null
+      }
+    }
   }, [])
+
+  const togglePlay = () => {
+    if (!audioRef.current) return
+    
+    if (isPlaying) {
+      audioRef.current.pause()
+    } else {
+      audioRef.current.play()
+    }
+    setIsPlaying(!isPlaying)
+  }
+
+  const toggleMute = () => {
+    if (!audioRef.current) return
+    
+    audioRef.current.muted = !audioRef.current.muted
+    setIsMuted(!isMuted)
+  }
 
   if (!mounted) return null
 
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500/30 rounded-full filter blur-3xl animate-blob"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500/30 rounded-full   filter blur-3xl animate-blob"></div>
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-cyan-400/30 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-yellow-300/30 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
       </div>
@@ -45,9 +77,40 @@ export default function HeroSection() {
                 Buy $GRUPPETS
               </Button>
             </div>
-            <div className="mt-8 flex items-center gap-4 justify-center md:justify-start">
-              <div className="bg-black/40 backdrop-blur-sm px-4 py-2 rounded-full">
-                <span className="text-green-400 font-mono">$GRUPPETS</span>
+            <div className="mt-8 flex flex-col gap-4">
+              <div className="flex items-center gap-4 justify-center md:justify-start">
+                <div className="bg-black/40 backdrop-blur-sm px-4 py-2 rounded-full">
+                  <span className="text-green-400 font-mono">$GRUPPETS</span>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-center md:justify-start">
+                <div className="bg-black/40 backdrop-blur-sm p-4 rounded-2xl flex items-center gap-4 group hover:bg-black/60 transition-all">
+                  <button
+                    onClick={togglePlay}
+                    className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-cyan-400 flex items-center justify-center hover:opacity-80 transition-opacity"
+                  >
+                    {isPlaying ? (
+                      <Pause className="w-6 h-6 text-white" />
+                    ) : (
+                      <Play className="w-6 h-6 text-white ml-1" />
+                    )}
+                  </button>
+                  <div className="flex flex-col">
+                    <span className="text-white/60 text-sm">GRUPPETS Radio</span>
+                    <span className="text-white font-medium">Puppet Rock Anthem</span>
+                  </div>
+                  <button
+                    onClick={toggleMute}
+                    className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all"
+                  >
+                    {isMuted ? (
+                      <VolumeX className="w-4 h-4 text-white" />
+                    ) : (
+                      <Volume2 className="w-4 h-4 text-white" />
+                    )}
+                  </button>
+                </div>
               </div>
             </div>
           </motion.div>

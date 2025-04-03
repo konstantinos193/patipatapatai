@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useRef } from "react"
@@ -137,4 +138,3 @@ export default function TokenomicsSection() {
     </section>
   )
 }
-
