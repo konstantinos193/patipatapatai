@@ -50,7 +50,7 @@ export default function RoadmapSection() {
       image: "/images/puppet-rainbow.png",
       items: [
         "Touch grass (optional)",
-        "Build a time machine to buy more $GRUPP",
+        "Build a time machine to buy more $GRUPPETS",
         "Create the Gruppetverse (it's like the metaverse but fluffier)",
         "Achieve meme immortality",
         "Retire to a private island made of felt",
