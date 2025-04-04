@@ -79,6 +79,7 @@ export default function Navbar() {
           </button>
           <Button 
             className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white"
+            onClick={() => window.open("https://jup.ag/swap/SOL-2aKoNudHgJuWno8Z8xzNGoCQhrqK3X8PRoNkAvcypump", "_blank")}
           >
             Buy Now
           </Button>
@@ -132,6 +133,7 @@ export default function Navbar() {
               </button>
               <Button 
                 className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white w-full"
+                onClick={() => window.open("https://pump.fun/coin/2aKoNudHgJuWno8Z8xzNGoCQhrqK3X8PRoNkAvcypump", "_blank")}
               >
                 Buy Now
               </Button>

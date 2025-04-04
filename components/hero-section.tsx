@@ -75,6 +75,7 @@ export default function HeroSection() {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button 
                 className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white text-lg px-8 py-6"
+                onClick={() => window.open("https://jup.ag/swap/SOL-2aKoNudHgJuWno8Z8xzNGoCQhrqK3X8PRoNkAvcypump", "_blank")}
               >
                 Buy $GRUPPETS
               </Button>
@@ -82,7 +83,7 @@ export default function HeroSection() {
             <div className="mt-8 flex flex-col gap-4">
               <div className="flex items-center gap-4 justify-center md:justify-start">
                 <div className="bg-black/40 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <span className="text-green-400 font-mono">$GRUPPETS</span>
+                  <span className="text-green-400 font-mono">2aKoNudHgJuWno8Z8xzNGoCQhrqK3X8PRoNkAvcypump</span>
                 </div>
               </div>
               
