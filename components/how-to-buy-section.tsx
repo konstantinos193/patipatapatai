@@ -13,25 +13,25 @@ export default function HowToBuySection() {
     {
       icon: <Wallet className="w-10 h-10 text-cyan-400" />,
       title: "Create a Wallet",
-      description: "Set up a Solana wallet like Phantom or Solflare to store your $GRUPPETS.",
+      description: "Set up a Bitcoin wallet that supports Ordinals, such as Xverse or Unisat.",
       color: "border-cyan-400",
     },
     {
       icon: <CreditCard className="w-10 h-10 text-pink-500" />,
-      title: "Get Some SOL",
-      description: "Purchase SOL from an exchange and transfer it to your Solana wallet.",
+      title: "Get Some BTC",
+      description: "Purchase BTC from an exchange and transfer it to your Ordinals-compatible wallet.",
       color: "border-pink-500",
     },
     {
       icon: <BarChart3 className="w-10 h-10 text-yellow-300" />,
-      title: "Connect to Pump.fun",
-      description: "Go to pump.fun and connect your Solana wallet to the platform.",
+      title: "Deposit BTC to Odin.fun",
+      description: "Go to odin.fun and deposit your BTC into the platform to get started.",
       color: "border-yellow-300",
     },
     {
       icon: <Rocket className="w-10 h-10 text-green-400" />,
-      title: "Buy $GRUPPETS",
-      description: "Use your SOL to purchase $GRUPPETS tokens directly on pump.fun.",
+      title: "Get $GRUPPETS",
+      description: "Transactions happen directly within odin.fun - no contract address or traditional swapping needed.",
       color: "border-green-400",
     },
   ]
@@ -52,7 +52,7 @@ export default function HowToBuySection() {
             </span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Join the Gruppets community on Pump.fun in a few simple steps
+            Join the Gruppets community on odin.fun in a few simple steps
           </p>
         </motion.div>
 
@@ -99,9 +99,9 @@ export default function HowToBuySection() {
           >
             <Button
               className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white text-lg px-8 py-6"
-              onClick={() => window.open("https://pump.fun", "_blank")}
+              onClick={() => window.open("https://odin.fun", "_blank")}
             >
-              Visit Pump.fun
+              Visit odin.fun
             </Button>
           </motion.div>
         </div>
