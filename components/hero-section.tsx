@@ -75,6 +75,7 @@ export default function HeroSection() {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button 
                 className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white text-lg px-8 py-6"
+                onClick={() => window.open("https://odin.fun/token/2e88", "_blank")}
               >
                 Buy $GRUPPETS
               </Button>
