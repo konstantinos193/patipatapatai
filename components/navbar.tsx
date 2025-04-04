@@ -77,7 +77,12 @@ export default function Navbar() {
           >
             Community
           </button>
-          <Button className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white">Buy Now</Button>
+          <Button 
+            className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white"
+            onClick={() => window.open("https://odin.fun/token/2efq", "_blank")}
+          >
+            Buy Now
+          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -126,7 +131,10 @@ export default function Navbar() {
               >
                 Community
               </button>
-              <Button className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white w-full">
+              <Button 
+                className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white w-full"
+                onClick={() => window.open("https://odin.fun/token/2efq", "_blank")}
+              >
                 Buy Now
               </Button>
             </div>

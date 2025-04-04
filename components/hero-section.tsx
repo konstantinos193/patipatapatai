@@ -73,7 +73,10 @@ export default function HeroSection() {
               over the blockchain one smile at a time.
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <Button className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white text-lg px-8 py-6">
+              <Button 
+                className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white text-lg px-8 py-6"
+                onClick={() => window.open("https://odin.fun/token/2efq", "_blank")}
+              >
                 Buy $GRUPPETS
               </Button>
             </div>
