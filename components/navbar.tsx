@@ -79,7 +79,6 @@ export default function Navbar() {
           </button>
           <Button 
             className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white"
-            onClick={() => window.open("https://odin.fun/token/2efq", "_blank")}
           >
             Buy Now
           </Button>
@@ -133,7 +132,6 @@ export default function Navbar() {
               </button>
               <Button 
                 className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white w-full"
-                onClick={() => window.open("https://odin.fun/token/2efq", "_blank")}
               >
                 Buy Now
               </Button>

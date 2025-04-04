@@ -66,7 +66,7 @@ export default function HeroSection() {
               <span className="block bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-cyan-400 to-yellow-300">
                 GRUPPETS
               </span>
-              <span className="block text-white">The Fluffiest Token in odin.fun</span>
+              <span className="block text-white">The Fluffiest Token in Solana</span>
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8 max-w-xl text-center md:text-left">
               Join the fuzzy revolution! Gruppets is not just a token, it's a community of colorful characters taking
@@ -75,7 +75,6 @@ export default function HeroSection() {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button 
                 className="bg-gradient-to-r from-pink-500 to-cyan-400 hover:opacity-90 text-white text-lg px-8 py-6"
-                onClick={() => window.open("https://odin.fun/token/2efq", "_blank")}
               >
                 Buy $GRUPPETS
               </Button>

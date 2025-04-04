@@ -14,13 +14,13 @@ export default function CommunitySection() {
       name: "Twitter",
       icon: <Twitter className="w-6 h-6" />,
       color: "bg-[#1DA1F2]",
-      url: "https://x.com/odingruppets",
+      url: "https://x.com/gruppetgang",
     },
     {
       name: "Twitter (again)",
       icon: <Twitter className="w-6 h-6" />,
       color: "bg-gradient-to-r from-pink-500 to-cyan-400",
-      url: "https://x.com/odingruppets",
+      url: "https://x.com/gruppetgang",
     },
   ]
 
@@ -117,7 +117,7 @@ export default function CommunitySection() {
                 <div className="space-y-4">
                   <button className="w-full bg-[#1DA1F2] hover:opacity-90 text-white font-medium py-3 rounded-lg transition-opacity flex items-center justify-center gap-2">
                     <Twitter className="w-5 h-5" />
-                    Follow @odingruppers
+                    Follow @gruppetgang
                   </button>
                 </div>
                 <p className="text-white/60 text-xs mt-4 text-center">

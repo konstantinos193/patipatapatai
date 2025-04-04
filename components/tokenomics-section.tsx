@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useRef } from "react"
@@ -105,11 +104,11 @@ export default function TokenomicsSection() {
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-2">
                   <span className="text-white/80">Total Supply</span>
-                  <span className="font-medium text-white">21,000,000 $GRUPPETS</span>
+                  <span className="font-medium text-white">1,000,000,000 $GRUPPETS</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-2">
                   <span className="text-white/80">Network</span>
-                  <span className="font-medium text-white">odin.fun</span>
+                  <span className="font-medium text-white">Solana</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-white/80">Tax</span>
